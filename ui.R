@@ -57,10 +57,12 @@ shinyUI(
             #putting things inside a menu
             tabItems(
                 tabItem(tabName = "dashboard",
-                    fluidRow(
+                        #defining the column width changes the infobox size
+                    fluidRow(column(width = 10,
                         infoBox("Sales",1000,icon = icon("thumbs-up")),
                         infoBox("Conversion %",'20%',icon = icon("warning")),
                         infoBoxOutput("approvedSales")
+                    )
                     ),
                     fluidRow(
                     #creating a value box
