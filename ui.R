@@ -63,6 +63,12 @@ shinyUI(
                         infoBoxOutput("approvedSales")
                     ),
                     fluidRow(
+                    #creating a value box
+                        valueBox(15*200,"Budget for 15 days",icon = icon("hourglass-3")),
+                        valueBoxOutput("Itemrequested")
+                        
+                    ),
+                    fluidRow(
                     #creating a tab and having panels innit
                     tabBox(
                     #putting the title and a solid color background
