@@ -10,4 +10,7 @@ shinyServer(function(input, output) {
     output$Technology_used<-{(
         renderText(input$tech)
     )}
+    output$location<-{(
+        renderText(input$loc)
+    )}
 })
