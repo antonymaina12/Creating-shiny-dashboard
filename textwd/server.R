@@ -13,4 +13,7 @@ shinyServer(function(input, output) {
     output$location<-{(
         renderText(input$loc)
     )}
+    output$no_of_days_spent<-{(
+        renderText(input$ndayspent)
+    )}
 })
