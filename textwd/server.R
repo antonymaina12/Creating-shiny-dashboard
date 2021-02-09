@@ -16,4 +16,7 @@ shinyServer(function(input, output) {
     output$no_of_days_spent<-{(
         renderText(input$ndayspent)
     )}
+    output$department<-{(
+        renderText(input$dept)
+    )}
 })

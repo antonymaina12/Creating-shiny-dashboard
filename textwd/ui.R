@@ -14,14 +14,18 @@ shinyUI(fluidPage(
         sliderInput("ndayspent","No. of days spent",1,100,20
                     #if you want a range on slider
                     #value = c(10,20)
-                    )
+                    ),
+        selectInput("dept","what is your department",choices = 
+                        #multiple is True when you want to select more that one
+                        c("Marketing","Finance","IT"),multiple = T)
         ),
         mainPanel(
             textOutput("project_code"),
             textOutput("project_name"),
             textOutput("Technology_used"),
             textOutput("location"),
-            textOutput("no_of_days_spent")
+            textOutput("no_of_days_spent"),
+            textOutput("department")
         )
     )
 )
