@@ -2,7 +2,8 @@ library(shiny)
 library(shinydashboard)
 #adding the menu to the tabs and adding icons to menu tabs
 shinyUI(
-    dashboardPage(
+    #Changing page title and skin color
+    dashboardPage(title = "Demo APP",skin = "purple",
         dashboardHeader(title = "A.K HOLDINGS",
         #creating notification,task and warning bells
             dropdownMenu(type = "notification",
