@@ -56,7 +56,13 @@ shinyUI(
         dashboardBody(
             #putting things inside a menu
             tabItems(
-                tabItem(tabName = "dashboard",fluidRow(
+                tabItem(tabName = "dashboard",
+                    fluidRow(
+                        infoBox("Sales",1000,icon = icon("thumbs-up")),
+                        infoBox("Conversion %",'20%',icon = icon("warning")),
+                        infoBoxOutput("approvedSales")
+                    ),
+                    fluidRow(
                     #creating a tab and having panels innit
                     tabBox(
                     #putting the title and a solid color background
