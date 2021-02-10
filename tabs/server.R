@@ -17,5 +17,8 @@ shinyServer(function(input, output) {
     output$plot<-renderPlot({
         with(mtreact(),boxplot(mpg~mtreact()[,2]))
     })
+    output$video<- renderUI({
+        tags$video(src = "feed.mp4",type = "video/mp4",controls = "controls")
+    })
 
 })
